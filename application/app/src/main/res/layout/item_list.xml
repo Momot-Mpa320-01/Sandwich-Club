@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:background="#E6E2E2"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Кот: "
+        android:padding="10dp"
+        android:textSize="24sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="#000"/>
+
+    <TextView
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/name"
+        android:textColor="#000"
+        android:padding="10dp"
+        android:textSize="24sp"
+        android:text=",7 лет"
+        app:layout_constraintTop_toTopOf="@id/name"
+        android:layout_marginStart="10dp"/>
+    <TextView
+        android:id="@+id/color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/age"
+        app:layout_constraintTop_toTopOf="@id/age"
+        android:text=",Цвет"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:textSize="24sp"
+        android:layout_marginStart="10dp"
+        android:textColor="#000"/>
+    <View
+        android:id="@+id/colorCat"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="#000"
+        app:layout_constraintStart_toEndOf="@id/color"
+        app:layout_constraintTop_toTopOf="@id/age"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/age" />
+</androidx.constraintlayout.widget.ConstraintLayout>
